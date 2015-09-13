@@ -1,0 +1,41 @@
+
+.first{
+	color: blue;
+	font-size: 40px;
+}
+h2{
+	color: pink;
+	font-size: 10px;
+
+}
+.second{
+	color: orange;
+	font-size: 70px;
+
+}
+.odd{
+	height: 200px;
+	background-color: f08080;
+}
+.even{
+	height: 200px;
+
+	background-color:teal ;
+} 
+
+.header{
+	color: teal;
+	background-color: teal
+}
+.red{
+	color:red;
+	font-size: 40px;
+}
+h4{
+	color: teal;
+	font-size: 10px;
+}
+h5{
+	color: blue;
+	font-size: 30px;
+}

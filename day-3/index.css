@@ -1,0 +1,45 @@
+h1{
+	font-size: 30px;
+	color: #212121;
+}
+h2{
+	font-size: 20px;
+	color: #212121;
+}
+
+.header{
+	text-align:center; 
+	height: 45px;
+	background-color: f08080;
+}
+.right1{
+	height: 500px;
+	width: 80%;
+	background-color: #E0E0E0;
+	float: right;
+}
+
+.left1{
+
+	height: 500px;
+    width: 20%;
+	background-color: #9E9E9E;
+
+	
+}
+.right2{
+	  height: 500px;
+	  width: 80%;
+	  background-color: #B0BEC5;
+	  float: right;
+}
+.left2{
+	height: 500px;
+	width: 20%;
+	background-color: #607D8B;
+}
+.footer{ 
+	height: 30px;
+	background-color: #0D47A1;
+
+}
