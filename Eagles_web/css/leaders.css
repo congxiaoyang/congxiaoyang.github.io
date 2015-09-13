@@ -1,0 +1,79 @@
+.con-left-b-title,.con-left-title{
+	font-size: 41px;
+	font-family: Minion Pro;
+	color: white;
+}
+.textone,.textfour,.texttwo,.textthree,.textfive{
+	color: #7f7f7f;
+}
+.content-left img{
+	margin-top: 20px;
+	float: left;
+	margin-right: 20px;
+}
+.moretwo,.morethree,.morefour{
+	display: block;
+	clear: both;
+}
+.moretwo{
+	margin-top: 10px;
+}
+.morethree,.morefour{
+	margin-top: 29px;
+}
+.morethree{
+	margin-bottom: 60px;
+}
+.morefour{
+	margin-bottom: 40px;
+}
+.texttwo,.textone,.textfour{
+	line-height: 1.6em;
+}
+span{
+	color: white;
+}
+.con-left-list{
+	list-style: none;
+}
+.con-left-list a{
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+	font-style: italic;
+}
+.con-left-list a:hover{
+	color: #f56c59;
+}
+.con-left-list li{
+	margin-bottom: 15px;
+}
+.textthree,.textfive {
+	line-height: 1.8em;
+}
+.textfour,.textfive{
+	margin-top: 33px;
+}
+.textfive{
+	margin-bottom: 60px;
+}
+.textone{
+	margin-top: 15px;
+}
+.sidebar-list{
+	padding-left: 16px;
+	margin-top: 32px;
+	color: white;
+}
+.sidebar-list a{
+	color: white;
+	text-decoration: none;
+	font-style: italic;
+	font-weight: bold;
+}
+.sidebar-list li{
+	margin-bottom: 23px;
+}
+.sidebar-list a:hover{
+	color: #f56c59;
+}

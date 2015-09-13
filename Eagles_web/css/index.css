@@ -1,0 +1,136 @@
+.banner{
+	background-image: url(../images/bg.png);
+	height: 348px;
+	width: 100%;
+}
+.banner-inner{
+	position: relative;
+	padding-top: 65px;
+	width: 940px;
+	height: 283px; 
+	margin: 0 auto;
+}
+.text{     
+	height: 92px; 
+	width: 589px;
+	color: #7f7f7f;
+}  
+.moreone{
+	display: block;
+	position: absolute;
+	bottom: 60px;
+	left: 0px;
+}
+.moretwo,.morethree{
+	display: block;
+	clear: both;
+	margin-left: 110px;
+}
+.textlink{
+	color: #cc2700;
+}
+.wel{
+	margin-bottom: 28px;
+	height: 23px; 
+	width: 384px;
+	background-image: url(../images/source.png);
+	background-position: -36px -134px;
+}
+
+.images{
+	position: absolute;
+	top: -30px;
+	right: -25px;
+	height: 338px;
+	width: 339px;
+	background-image: url(../images/source.png);
+	background-position: -135px -206px;
+}
+.next{
+	height: 30px;
+	width: 173px;
+	background-image: url(../images/source.png);
+	background-position: -173px -95px;
+}
+.tuesday{
+	height: 60px;
+	width: 60px;
+	background-image: url(../images/source.png);
+	background-position: -396px -44px;
+	margin-top: 50px
+}
+.texttwo{
+	font-size: 15px;
+	width: 501px;
+	float: right;
+	margin-right: 29px;
+	color: #7f7f7f;
+	margin-top: 55px;
+	margin-bottom: 20px;
+}
+span{
+	color: #fff;
+}
+.monday{
+	height: 60px;
+	width: 60px;
+	background-image: url(../images/source.png);
+	background-position: -25px -276px;
+}
+.textthree{
+	width: 280px;
+	float: right;
+	color: #797f7f;
+	font-size: 15px;
+}
+.blog-pic{
+	width: 219px;
+	height: 160px;
+	background-image: url(../images/source.png);
+	background-position: -23px -562px;
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 30px;
+}
+ul{ 
+	list-style-image: url(../images/mark_03.gif);
+	margin-top: 32px;
+	color: white;
+}
+ul a{
+	color: white;
+	text-decoration: none;
+	font-style: italic;
+	font-weight: bold;
+}
+li{
+	border-bottom: 1px dashed #7f7f7f;
+	padding-bottom: 12px;
+	padding-top: 12px;
+}
+ul a:hover{
+	color: #f56c59;
+}
+.troop{
+	width: 300px;
+	background-color: #000;
+	border-radius: 7px;
+	margin-top: 10px;
+	margin-bottom: 60px;
+}
+h5{
+	font-size: 20px;
+	color: white;
+	padding-top: 21px;
+	margin-left: 21px;
+	margin-bottom: 15px;	 
+}
+.new{
+	margin-left: 21px;
+}
+p{
+	margin-left: 21px;
+}
+span{
+	color: #7f7f7f;
+}

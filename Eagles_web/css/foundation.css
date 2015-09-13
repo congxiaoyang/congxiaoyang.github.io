@@ -1,0 +1,55 @@
+.content-title{
+	font-size: 45px;
+	font-family: Adobe Caslon Pro;
+	color: white;
+}
+span{
+	color: #fff;
+}
+.textone{
+	font-size: 15px;
+	width: 501px;
+	margin-right: 116px;
+    color: #7f7f7f;
+    margin-top: -12px;
+    margin-bottom: 20px;
+}
+.con-left-bottom img{
+	float: left;
+	margin-right: 20px;
+}
+.texttwo{
+    font-size: 15px;
+    color: #7f7f7f;
+    word-spacing: 2px;
+    line-height: 1.7em;
+}
+.moreone{
+	display: block;
+	clear: both;
+	margin-top: 28px;
+}
+.textthree{
+	margin-top: 33px;
+	margin-left: 10px;
+	color: #7f7f7f;
+	line-height: 1.6em;
+}
+ul{
+	color: #7f7f7f;
+	list-style: none;
+	margin-top: 40px;
+	margin-bottom: 72px;
+	padding-left: 10px;
+}
+ul a{
+	color: #fff;
+}
+ul a:hover{
+	color: #f56c59;
+}
+li{
+	margin-bottom: 25px;
+}
+
+
