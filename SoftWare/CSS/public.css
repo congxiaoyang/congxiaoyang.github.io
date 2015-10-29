@@ -1,0 +1,62 @@
+body{margin: 0;background-color: #0d0d0d;font-family: arial;}
+.cf:after,.cf:before{content: " ";display: table;}
+.cf:after{clear: both;}
+.header-inner{margin: 0 auto;width: 959px;padding-top: 44px;}
+.content{
+	background-image: -webkit-radial-gradient(50% 30%,circle,#232323,#0d0d0d);
+	background-image: -moz-radial-gradient(50% 30%,circle,#232323,#0d0d0d);
+	background-image: -ms-radial-gradient(50% 30%,circle,#232323,#0d0d0d);
+	background-image: radial-gradient(50% 30%,circle,#232323,#0d0d0d);
+}
+h1:first-letter{display: inline-block;color: #f15205;}
+h1{color: #fff;font-size: 45px;font-family: 'Arial Black', Gadget, sans-serif;font-weight: bold;margin-left: 24px;float: left;margin-top: 0;} 
+.log{float: right;margin-top: 25px;margin-right: 28px;}
+.log a{float: left;margin-right: 36px;text-decoration: none;color: #fff;}
+.log a:last-child{margin-right: 0;}
+nav{width: 958px;height: 55px;margin-top: 44px;}
+nav ul{margin: 0;padding: 0;}
+nav li{ 
+	height: 53px;
+	border-left: 1px solid #cacaca;
+	border-right: 1px solid #fff;
+	float: left;
+	list-style: none;
+	background-image: -webkit-linear-gradient(top,#fff,#dadada);
+	background-image: -moz-linear-gradient(top,#fff,#dadada);
+	background-image: -ms-linear-gradient(top,#fff,#dadada);
+	background-image: linear-gradient(top,#fff,#dadada);
+	text-align: center;
+}
+nav a{
+	text-decoration: none;
+	line-height: 53px;
+	color: #0d0d0d;
+	padding: 19px 63px; 
+	font-size: 16px;
+}
+nav li:hover a{
+	background-color: #e82d02;
+	color: #fff;
+}
+nav li:first-child{
+    border-left: none;
+}
+nav li:first-child:hover a,nav li:first-child{
+	border-radius: 10px 0 0 10px;
+}
+nav li:last-child{
+    border-right: none;
+}
+nav li:last-child:hover a,nav li:last-child{
+	border-radius: 0 10px 10px 0;
+}
+footer{
+	height: 112px;
+	background-image: linear-gradient(top,#fff,#dadada);
+	background-image: -webkit-linear-gradient(top,#fff,#dadada);
+	background-image: -moz-linear-gradient(top,#fff,#dadada);
+	background-image: -ms-linear-gradient(top,#fff,#dadada);
+	}
+	footer p{text-align: center;margin-top: 8px;font-size: 14px; }
+	footer p:first-child{margin-top: 40px;}
+	footer a{color: red;}
