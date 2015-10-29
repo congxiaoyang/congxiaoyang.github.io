@@ -1,0 +1,76 @@
+body{
+	font-family: "微软雅黑";
+}
+.header{
+	background-image: url(../images/header.png);
+	height: 149px;
+	width: 100%;
+	position: relative;
+}
+.header-inner{
+	width: 970px;
+	height: 34px;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -435px;
+}
+.navbar{
+	float: left;
+	border-right: 1px solid white; 
+	padding: 0 15px;
+}
+.navbar a{
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+}
+.navbar span{
+	font-size: 8px;
+	display: block;
+	text-align: center;
+}
+.search{
+	width: 120px;
+	height: 20px;
+	background-color: #000;
+	float: right;
+}
+.search input{
+    padding: 0;
+	border: 0;
+}
+.search a{
+	float: right;
+}
+.search img{
+	*margin-top: -21px;
+}
+.classify{
+	overflow: hidden;
+	margin-top: 10px;
+}
+.classify a{
+	margin: 0;
+	float: left;
+}
+.dresses{
+	margin-left: -20px;
+}
+.type{
+	overflow: hidden;
+}
+.type a{
+	float: left;
+}
+.new{
+	margin-left: -29px;
+}
+.footer{
+	background-image: url(../images/footer_bg_03.png);
+	height: 278px;
+}
+.footer img{
+	display: block;
+	vertical-align: middle;
+}

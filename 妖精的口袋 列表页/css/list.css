@@ -1,0 +1,76 @@
+.clearfix:after,.clearfix:before{display: table;content: " ";}
+.clearfix:after{
+	clear: both;
+}
+.main{
+	background-image: url(../images/main_bg_10.png);
+}
+.banner{
+	background-image: url(../images/banner.png);
+	height: 550px;
+	width: 100%;
+	background-position: -260px 0;
+}
+.main-inner{
+	width: 990px;
+	margin: 0 auto;
+}
+.list-top{
+	height: 31px;
+	width: 988px;
+	background-color: #fff;
+	border-bottom: 3px solid #000;
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+}
+.list-top span{	
+	margin-left: 5px;	
+}
+.list-top a,.list-top span{
+    font-size: 14px;
+    line-height: 31px;
+}
+.list-top a{
+	float: right;
+	color: #000;
+	text-decoration: none;
+}
+.blockone{
+	background-color: #fff;
+	width: 990px;
+}
+.cloth-list,.cloth-list-first{
+	width: 990px;
+}
+.cloth-list
+{
+	margin-top: 30px;
+}
+.cloth-list-first{
+	margin-top: 10px;
+}
+.per,.per-last{
+	width: 240px;
+	float: left;
+}
+.per{
+	margin-right: 10px;
+}
+.clothname{
+	color: black;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 13px;    
+}
+.clothname:hover{
+    text-decoration: underline;
+    color: black;
+}
+.per .image{
+	height: 240px;
+	width: auto;
+}
+.fashion{
+	margin-top: 20px;
+}
