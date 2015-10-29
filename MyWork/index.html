@@ -12,16 +12,140 @@
 		 url(fonts/azo-sans-thin.woff),
 		 url(fonts/azo-sans-thin.eot);
 }
+	.cf:before,.cf:after{
+		content: " ";
+		display: table;
+	}
+	.cf:after{
+		clear: both;
+	}
 	body{
+		font-size: 10px;
+		margin: 0;
 		width: 100%;height: 100%;
 		font-family: Myfont;
 		font-weight: bold;
 	}
-	h1{
-        text-align: center;
-        color: black;
-		}
-	a{
+	h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
+	.body-inner{
+		width: 90%;
+		margin: 0 auto;
+	}
+	ul{	margin: 0;
+	padding: 0;}
+	.header-top{
+	position: relative;
+	height: 72px;
+	background-image: linear-gradient(top,#f0f1f4,#e8eaee);
+	background-image: -webkit-linear-gradient(top,#f0f1f4,#e8eaee);
+	background-image: -moz-linear-gradient(top,#f0f1f4,#e8eaee);
+	background-image: -ms-linear-gradient(top,#f0f1f4,#e8eaee);
+	background-image: -o-linear-gradient(top,#f0f1f4,#e8eaee);
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.header-top h1{
+	display: inline;
+	position: absolute; 
+	left: 50%;
+	margin: 0 0 0 -83.9295px;
+	font-size: 35px;
+	line-height: 72px;
+	color: #43464c;
+}
+.header-top img{
+	position: absolute;
+	top: 26px;
+	left: 50%;
+	margin-left: -53px;
+}
+.header-top ul{
+	float: right;
+	padding-right: 48px;
+}
+.header-top ul li{
+	display: inline-block;
+	list-style: none;
+}
+.header-top ul li a{
+	display: block;
+	padding: 26px 31px;
+	text-decoration: none;
+	font-size: 1.6em;
+}
+.header-top ul li a{
+	color: #43464c;
+	position: relative;
+	background-color: rgba(255,255,255,0);
+	transition: background-color .3s,color .3s;
+	-webkit-transition: background-color .3s,color .3s;
+	-moz-transition: background-color .3s,color .3s;
+}
+.header-top ul li:first-of-type a:hover{
+	background-color: #f5756c;
+}
+.header-top ul li:first-of-type a{
+	transition: background-color .3s;
+	-webkit-transition: background-color .3s;
+	-moz-transition: background-color .3s;
+}
+.header-top ul li:last-of-type a:hover{
+	background-color: #6585ed;
+}
+.header-top ul li:hover a{
+	color: #fff;
+}
+.characteristic{
+	padding: 40px 9.2761% 86px 10.6816%;
+	background-image: linear-gradient(top,#ebeff8,#f4f5f8);
+	background-image: -webkit-linear-gradient(top,#ebeff8,#f4f5f8);
+	background-image: -moz-linear-gradient(top,#ebeff8,#f4f5f8);
+	background-image: -ms-linear-gradient(top,#ebeff8,#f4f5f8);
+	background-image: -o-linear-gradient(top,#ebeff8,#f4f5f8);
+}
+.characteristic .item{
+	width: 19.2273%; /* 219/1139*/
+	text-align: center;
+	float: left;
+	margin-right: 5.7067%; /*65/1139*/
+	margin-top: 40px;
+}
+.characteristic>div:last-child{
+	margin-right: 0;
+}
+.characteristic .item .icon{
+	display: block;
+	width: 120px;  /*120/219*/
+	height: 120px;
+	background-color: #fff;
+	border: 1px solid #e7eaee;
+	border-radius: 28px;
+	margin: 0 auto;
+	text-decoration: none;
+}
+.characteristic .item .icon i{
+	line-height: 120px;
+	font-size: 60px;
+}
+.characteristic .item:nth-of-type(4) i{
+	color: #5fd9ad;
+}
+.characteristic .item:nth-of-type(3) i{
+	color: #98afc0;
+}
+.characteristic .item:nth-of-type(2) i{
+	color: #ee6f90;
+}
+.characteristic .item:nth-of-type(1) i{
+	color: #6585ed;
+}
+.characteristic .item p{
+	font-size: 1.5em;
+}
+.characteristic .item h3{
+	font-size: 2.4em;
+	margin-top: 29px;
+}
+	/*.main a{
 		padding: 20px;
 		text-align: center;
         margin: 20px 0 0 20px;
@@ -31,34 +155,178 @@
 		text-decoration: none;
 		font-size: 20px;
 	}
-	a:hover{
+	.main a:hover{
 		background-color: #4DB6AC;
-	}
+	}*/
 	</style>
 </head>
 <body>
-	<h1>
-		<strong>我是从洋，欢迎来到我的主页
-		</strong>
-	</h1>
-    	<a href="day-1">day-1</a>
-		<a href="day-2/">day-2</a>
-		<a href="day-3/">day-3</a>
-		<a href="day-4/">day-4</a>
-		<a href="day-5/">day-5</a>
-		<a href="day-6/">day-6</a>
-		<a href="practice/">practice</a>
-		<a href="day-7">day-7</a>
-		<a href="day-8">day-8</a>
-		<a href="Eagles_web">Eagles页面</a>
-		<a href="fitline_web">fitline页面</a>
-		<a href="css3 nav1">css3 nav1</a>
-		<a href="css3 nav2">css3 nav2</a>
-		<a href="css3 nav3">css3 nav3</a>
-		<a href="Oscar">奥斯卡主页</a>
-		<a href="Oscar(respond)">奥斯卡主页(响应式)</a>
-		<a href="nav hover">tooltip效果</a>
-		<a href="SoftWare">software主页</a>
-		<a href="妖精的口袋 列表页">clothes list</a>
+		<header>
+			<div class="header-top">
+				<a href="#">
+					<h1>CongYang</h1>
+				</a>
+				<ul>
+					<li><a href="#" data-name="Login">About Me</a></li>
+					<li><a href="#" data-name="Sign Up">My Work</a></li>
+				</ul>
+			</div>
+		</header>
+		<section class="main">
+			<div class="wraper1 characteristic cf">
+				<div class="item">
+					<a class="icon" href="day-1"><i class="fa fa-university"></i>
+
+					</a>
+					<h3>First Web Page</h3>
+					<p>This page is my first web page.It's precious</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="day-2/"><i class="fa fa-credit-card"></i>
+
+					</a>
+					<h3>Second Web Page</h3>
+					<p>This is my second web page.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="day-3/"><i class="fa fa-truck"></i>
+
+					</a>
+					<h3>Third Web Page</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="day-4/"><i class="fa fa-paper-plane-o"></i>
+
+					</a>
+					<h3>Forth Web Page</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="day-5/"><i class="fa fa-university"></i>
+
+					</a>
+					<h3>Fifth Web Page</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="day-6/"><i class="fa fa-credit-card"></i>
+
+					</a>
+					<h3>Sixth Web Page</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="practice/"><i class="fa fa-truck"></i>
+
+					</a>
+					<h3>Practice</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="day-7"><i class="fa fa-paper-plane-o"></i>
+
+					</a>
+					<h3>Seventh Web Page</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="day-8"><i class="fa fa-university"></i>
+
+					</a>
+					<h3>eighth Web Page</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="Eagles_web"><i class="fa fa-credit-card"></i>
+
+					</a>
+					<h3>Eagles Web Page</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="fitline_web"><i class="fa fa-truck"></i>
+
+					</a>
+					<h3>Fitline Web Page</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="css3 nav1"><i class="fa fa-paper-plane-o"></i>
+
+					</a>
+					<h3>CSS3 Nav1</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="css3 nav2"><i class="fa fa-paper-plane-o"></i>
+
+					</a>
+					<h3>CSS3 Nav2</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="css3 nav3"><i class="fa fa-paper-plane-o"></i>
+
+					</a>
+					<h3>CSS3 Nav3</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="Oscar"><i class="fa fa-paper-plane-o"></i>
+
+					</a>
+					<h3>奥斯卡页面</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="Oscar(respond)"><i class="fa fa-paper-plane-o"></i>
+
+					</a>
+					<h3>奥斯卡页面（响应式）</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="nav hover"><i class="fa fa-paper-plane-o"></i>
+
+					</a>
+					<h3>Nav Hover</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="SoftWare"><i class="fa fa-paper-plane-o"></i>
+
+					</a>
+					<h3>SoftWare Web Page</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+				<div class="item">
+					<a class="icon" href="妖精的口袋 列表页"><i class="fa fa-paper-plane-o"></i>
+
+					</a>
+					<h3>妖精的口袋（列表页）</h3>
+					<p>Sell products and/or subcciptions without writing any code at all.</p>
+				</div>
+			</div>
+	    	<!-- <a href="day-1">day-1</a>
+			<a href="day-2/">day-2</a>
+			<a href="day-3/">day-3</a>
+			<a href="day-4/">day-4</a>
+			<a href="day-5/">day-5</a>
+			<a href="day-6/">day-6</a>
+			<a href="practice/">practice</a>
+			<a href="day-7">day-7</a>
+			<a href="day-8">day-8</a>
+			<a href="Eagles_web">Eagles页面</a>
+			<a href="fitline_web">fitline页面</a>
+			<a href="css3 nav1">css3 nav1</a>
+			<a href="css3 nav2">css3 nav2</a>
+			<a href="css3 nav3">css3 nav3</a>
+			<a href="Oscar">奥斯卡主页</a>
+			<a href="Oscar(respond)">奥斯卡主页(响应式)</a>
+			<a href="nav hover">tooltip效果</a>
+			<a href="SoftWare">software主页</a>
+			<a href="妖精的口袋 列表页">clothes list</a> -->
+		</section>
 </body>
 </html>

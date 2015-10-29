@@ -169,7 +169,7 @@ ul{	margin: 0;
 .banner-bottom-inner a:last-of-type:hover{
 	color: rgba(255, 255, 255, 0.6);
 }
-/*.characteristic{
+.characteristic{
 	padding: 80px 9.2761% 86px 10.6816%;
 	background-image: linear-gradient(top,#ebeff8,#f4f5f8);
 	background-image: -webkit-linear-gradient(top,#ebeff8,#f4f5f8);
@@ -704,4 +704,4 @@ footer ul a,footer span a{
 		font-size: 12px;
 	}
 	
-}*/
+}
