@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>About Me</title>
+	<link rel="stylesheet" href="fa/css/font-awesome.css">
+	<style>
+	@font-face{
+	font-family: "Myfont";
+	src: url(fonts/azo-sans-thin.ttf),
+		 url(fonts/azo-sans-thin.svg),
+		 url(fonts/azo-sans-thin.woff),
+		 url(fonts/azo-sans-thin.eot);
+}
+	.cf:before,.cf:after{
+		content: " ";
+		display: table;
+	}
+	.cf:after{
+		clear: both;
+	}
+	body{
+		font-size: 10px;
+		margin: 0;
+		width: 100%;height: 100%;
+		font-family: Myfont;
+		font-weight: bold;
+	}
+	h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
+	.body-inner{
+		width: 90%;
+		margin: 0 auto;
+	}
+	ul{	margin: 0;
+	padding: 0;}
+	.header-top{
+	position: relative;
+	height: 72px;
+	background-image: linear-gradient(top,#f0f1f4,#e8eaee);
+	background-image: -webkit-linear-gradient(top,#f0f1f4,#e8eaee);
+	background-image: -moz-linear-gradient(top,#f0f1f4,#e8eaee);
+	background-image: -ms-linear-gradient(top,#f0f1f4,#e8eaee);
+	background-image: -o-linear-gradient(top,#f0f1f4,#e8eaee);
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.header-top h1{
+	display: inline;
+	position: absolute; 
+	left: 50%;
+	margin: 0 0 0 -83.9295px;
+	font-size: 35px;
+	line-height: 72px;
+	color: #43464c;
+}
+.header-top img{
+	position: absolute;
+	top: 26px;
+	left: 50%;
+	margin-left: -53px;
+}
+.header-top ul{
+	float: right;
+	padding-right: 48px;
+}
+.header-top ul li{
+	display: inline-block;
+	list-style: none;
+}
+.header-top ul li a{
+	display: block;
+	padding: 26px 31px;
+	text-decoration: none;
+	font-size: 1.6em;
+}
+.header-top ul li a{
+	color: #43464c;
+	position: relative;
+	background-color: rgba(255,255,255,0);
+	transition: background-color .3s,color .3s;
+	-webkit-transition: background-color .3s,color .3s;
+	-moz-transition: background-color .3s,color .3s;
+}
+.header-top ul li:first-of-type a:hover{
+	background-color: #f5756c;
+}
+.header-top ul li:first-of-type a{
+	transition: background-color .3s;
+	-webkit-transition: background-color .3s;
+	-moz-transition: background-color .3s;
+}
+.header-top ul li:last-of-type a:hover{
+	background-color: #6585ed;
+}
+.header-top ul li:hover a{
+	color: #fff;
+}
+.characteristic{
+	background-color: #34344d;;
+	padding: 40px 9.2761% 86px 10.6816%;
+	/*background-image: linear-gradient(top,#ebeff8,#f4f5f8);
+	background-image: -webkit-linear-gradient(top,#ebeff8,#f4f5f8);
+	background-image: -moz-linear-gradient(top,#ebeff8,#f4f5f8);
+	background-image: -ms-linear-gradient(top,#ebeff8,#f4f5f8);
+	background-image: -o-linear-gradient(top,#ebeff8,#f4f5f8);*/
+}
+.characteristic .item{
+	color: #fff;
+	width: 19.2273%; /* 219/1139*/
+	text-align: center;
+	float: left;
+	margin-right: 5.7067%; /*65/1139*/
+}
+.characteristic:first-of-type .item{
+	margin-top: 40px;
+}
+.characteristic>div:last-child{
+	margin-right: 0;
+}
+.characteristic .item .icon{
+	display: block;
+	width: 120px;  /*120/219*/
+	height: 120px;
+	background-color: #fff;
+	border: 1px solid #e7eaee;
+	border-radius: 28px;
+	margin: 0 auto;
+	text-decoration: none;
+}
+.characteristic .item .icon i{
+	line-height: 120px;
+	font-size: 60px;
+}
+.characteristic .item:nth-of-type(4) i{
+	color: #5fd9ad;
+}
+.characteristic .item:nth-of-type(3) i{
+	color: #98afc0;
+}
+.characteristic .item:nth-of-type(2) i{
+	color: #ee6f90;
+}
+.characteristic .item:nth-of-type(1) i{
+	color: #6585ed;
+}
+.characteristic .item p{
+	font-size: 1.5em;
+}
+.characteristic .item h3{
+	font-size: 2.4em;
+	margin-top: 29px;
+}
+.personal{
+	width: 90%;
+	margin: 50px auto;
+}
+img{
+	width: 100%;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<header>
+			<div class="header-top">
+				<a href="congxiaoyang.github.io">
+					<h1>CongYang</h1>
+				</a>
+				<ul>
+					<li><a href="AboutMe" data-name="Login">About Me</a></li>
+					<li><a href="MyWork" data-name="Sign Up">My Work</a></li>
+				</ul>
+			</div>
+	</header>
+	<div class="personal">
+	<img src="images/personalInformation.jpg" alt="">
+	</div>
+</body>
+</html>
