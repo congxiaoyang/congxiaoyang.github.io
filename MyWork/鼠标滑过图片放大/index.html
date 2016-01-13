@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>picBig</title>
+	<style>
+		body{
+			position: relative;
+		}
+		img{
+			height: 140px;
+			width: 220px;
+		}
+		.big,.bigpicsize{
+			height: 250px;
+			width: 370px;
+		}
+	</style>
+</head>
+<body>
+	<img src="images/5.jpg" alt="">
+	<img src="images/6.jpg" alt="">
+	<img src="images/7.jpg" alt="">
+	<img src="images/8.jpg" alt="">
+	<script type="text/javascript" src="jquery-1.11.1.js"></script>
+	<script>
+		$("img").mouseenter(function(event){
+			var src = $(this).attr("src");
+			bigPic = $("<img src='" + src + "' alt='' />");
+			bigPic.addClass("big");
+			bigPicTop = event.pageY;
+			bigPicLeft = event.pageX;
+			showPicDiv = $("<div></div>").addClass("bigpicsize");
+			showPicDiv.css({"position":"absolute","top":bigPicTop + 5,"left":bigPicLeft + 5});
+			showPicDiv.append(bigPic);
+			$("body").append(showPicDiv).addClass("body");
+			console.log(event.pageX);
+		})
+		$("img").mousemove(function(event){
+			bigPicTop = event.pageY;
+			bigPicLeft = event.pageX;
+			showPicDiv.css({"position":"absolute","top":bigPicTop + 5,"left":bigPicLeft + 5});
+		})
+		$("img").mouseleave(function(){
+			showPicDiv.remove();
+		})
+	</script>
+</body>
+</html>

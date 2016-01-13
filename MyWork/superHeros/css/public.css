@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.box{
+	border: 1px solid red;
+	height: 100px;
+}
+nav{
+	margin: 10px auto;
+	width: 70%;
+}
+.navlist{
+	background-color: #fff;
+}
+.carousel-inner .item img{
+	width: 100%;
+	height: 700px;
+}
+.maininner{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+.thumbnail img{
+	width: 95%;
+	height: 330px;
+}
+.maininner .row2{
+	margin-top: 20px; 
+}
+body .thumbnail{
+	box-shadow: 0px 0px 10px #ddd;
+}
+.fix{
+	position: fixed;
+	top: 0;
+	left: 50%;
+	margin-left: -472.15px;
+	z-index: 16;
+}
+.heroInfo img{
+	width: 100%;
+}
+.heroInfo .herosItem{
+	position: fixed;
+	top: 50%;
+	left: 0;
+	margin-top: -200px;
+	display: none;
+	z-index: 18;
+}
+.show{
+	display: block;
+}
+.heroInfo .herosItem span{
+	text-align: center;
+	display: block;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	cursor: pointer;
+}
+.heroInfo .herosItem span:nth-child(1){
+	background-color: #C0392B;
+	color: #eee;
+}
+.heroInfo .herosItem span:nth-child(2){
+	background-color: #E5894C;
+}
+.heroInfo .herosItem span:nth-child(3){
+	background-color: #ffeb3b;
+}
+.heroInfo .herosItem span:nth-child(4){
+	background-color: #8bc34a;
+	color: #0D6B54
+}
+.heroInfo .herosItem span:nth-child(5){
+	 background-color: #4dd0e1;
+}
+.heroInfo .herosItem span:nth-child(6){
+	background-color: #1de9b6;
+}
+.heroInfo .herosItem span:nth-child(7){
+	background-color: #b39ddb;
+}
+.heroInfo .herosItem span:nth-child(8){
+	background-color: #e0e0e0;
+}
+body .main .heroInfo .demo{
+	width: 100%;
+}
+body .main .heroInfo .demo figcaption{
+	width: 70%;
+	height: 70%;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -35%;
+}
+body .main .heroInfo .demo figcaption h2{
+	padding-top: 20px;
+	font-size: 40px;
+}
+body .main .heroInfo .demo2 figcaption h2,
+body .main .heroInfo .demo8 figcaption h2{
+	padding-top: 50px;
+	margin-top: 20px;
+}
+body .main .heroInfo .demo figcaption p{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 20px;
+}
+body .main .heroInfo .demo5 figcaption h2,
+body .main .heroInfo .demo6 figcaption h2
+{
+	padding-top: 100px;
+}
+body figure figcaption h2{
+	opacity: 0;
+}
+body figure:hover figcaption h2{
+	opacity: 1;
+}
+footer{
+	height: 180px;
+	padding: 20px 30px;
+}
+.footerinner{
+	margin:  20px auto;
+	width: 80%;
+}
+.footerItem a{
+	display: block;
+	color: #000;
+}
+.backtop{
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	z-index: 30;
+	color: #337AB7;
+	display: none;
+	transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	-ms-transition: all 0.6s;
+	-o-transition: all 0.6s;
+}
+.backtop i{
+	cursor: pointer;
+} 
+.backtopShow{
+	display: block;
+}
+.backtopFlownUp{
+	bottom: 80px;
+}
+.backtopFlownDown{
+	bottom: 50px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>addpic</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		div{
+			margin:  0 auto;
+			width: 80%;
+		}
+		ul{
+			width: 25%;
+			float: left;
+		}
+		ul li img{
+			margin-bottom: 10px;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li><img src="images/pic1.jpg" alt=""></li>
+			<li><img src="images/pic2.jpeg" alt=""></li>
+			<li><img src="images/pic3.jpeg" alt=""></li>
+			<li><img src="images/pic4.jpg" alt=""></li>
+			<li><img src="images/pic5.jpg" alt=""></li>
+		</ul>
+		<ul>
+			<li><img src="images/pic6.jpg" alt=""></li>
+			<li><img src="images/pic7.jpg" alt=""></li>
+			<li><img src="images/pic8.jpg" alt=""></li>
+			<li><img src="images/pic9.png" alt=""></li>
+			<li><img src="images/pic10.jpeg" alt=""></li>
+		</ul>
+		<ul>
+			<li><img src="images/pic3.jpeg" alt=""></li>
+			<li><img src="images/pic6.jpg" alt=""></li>
+			<li><img src="images/pic7.jpg" alt=""></li>
+			<li><img src="images/pic2.jpeg" alt=""></li>
+			<li><img src="images/pic9.png" alt=""></li>
+		</ul>
+		<ul>
+			<li><img src="images/pic10.jpeg" alt=""></li>
+			<li><img src="images/pic5.jpg" alt=""></li>
+			<li><img src="images/pic7.jpg" alt=""></li>
+			<li><img src="images/pic9.png" alt=""></li>
+			<li><img src="images/pic3.jpeg" alt=""></li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		var winHeight = $(window).height();
+		$(window).scroll(function(){
+			var docHeight = $(document).height();
+			var scrolltop = $(window).scrollTop();
+			var scrollBottom = docHeight - winHeight - scrolltop;
+			if(scrollBottom < 100){
+				var randomPicArr = ["images/pic1.jpg","images/pic2.jpeg","images/pic3.jpeg","images/pic4.jpg","images/pic5.jpg","images/pic6.jpg","images/pic7.jpg","images/pic8.jpg","images/pic9.png","images/pic10.jpeg"]
+				for(var j = 0;j<$("ul").length;j++){
+					var ran1 = Math.floor(Math.random()*9);
+					var i1 = ran1;
+					var ran2 = Math.floor(Math.random()*9);
+					var i2 = ran2;
+					var ran3 = Math.floor(Math.random()*9);
+					var i3 = ran3;
+					var ran4 = Math.floor(Math.random()*9);
+					var i4 = ran4;
+					var ran5 = Math.floor(Math.random()*3);
+					var n = ran5;
+					var liArr = ["<li>" + "<img src='" + randomPicArr[i1] + "' alt='' />","<li>" + "<img src='" + randomPicArr[i2] + "' alt='' />","<li>" + "<img src='" + randomPicArr[i3] + "' alt='' />","<li>" + "<img src='" + randomPicArr[i4] + "' alt='' />"]
+					$("ul").eq(j).append(liArr[n]);
+				}	
+			}
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>slideDown</title>
+	<style>
+		.cf:after,.cf:before{
+			display: table;
+			content: " ";
+		}
+		.cf:after{
+			clear: both;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: arial;
+			list-style: none;
+			text-decoration: none;
+		}
+		body{
+			background-color: #000;
+		}
+		.mainnav{
+			width: 52%;
+			margin: 100px auto;
+			overflow: hidden;
+		}
+		.mainnav>li{
+			float: left;
+			position: relative;
+		}
+		.mainnav>li>a,.mainnav>li>a:before{
+			display: block;
+			padding: 21px 27px;
+			color: #fff;
+			text-shadow: 1px 1px 1px #2e2916;
+			font-weight: bold; 
+			border-left: 1px solid #2d2d2d;
+			border-right: 1px solid #000;
+		}
+		.mainnav>li>a{
+			background-image: linear-gradient(top,#1a1a1a,#080708,#1a1a1a);
+			background-image: -webkit-linear-gradient(top,#1a1a1a,#080708,#1a1a1a);
+			background-image: -moz-linear-gradient(top,#1a1a1a,#080708,#1a1a1a);
+			background-image: -ms-linear-gradient(top,#1a1a1a,#080708,#1a1a1a);
+			background-image: -o-linear-gradient(top,#1a1a1a,#080708,#1a1a1a);
+		}
+		.mainnav>li>a:before{
+			content: attr(data-name);
+			background-image: url(images/mainnavbgi_08.png);
+			position: absolute;
+			top: 100%;
+			left: 0px;
+		}
+		.mainnav>li:first-of-type a{
+			border-left: none;
+		}
+	</style>
+</head>
+<body>
+	<nav class="cf">
+		<ul class="mainnav cf">
+			<li><a href="#" data-name="Home">Home</a></li>
+			<li><a href="#" data-name="Likes">Likes</a></li>
+			<li><a href="#" data-name="Views">Views</a></li>
+			<li><a href="#" data-name="Uploads">Uploads</a></li>
+			<li><a href="#" data-name="Videos">Videos</a></li>
+		</ul>
+	</nav>
+	<script type="text/javascript" src="jquery-1.11.1.js"></script>
+	<script>
+		$("nav .mainnav>li").hover(function(){   //对.mainnav下的li执行hover方法。
+			$(this).stop().animate({"margin-top":-59},400);//对对象.mainnav 下的li用自定义的动画方法实现向上滚动，下面的内容会自动向上.
+		},function(){
+			$(this).stop().animate({"margin-top":0},400);//hover过后让.mainnav下的li回到原位。
+		})
+	</script>
+</body>
+</html>
