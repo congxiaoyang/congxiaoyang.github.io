@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>domAddDelete</title>
+	<style>
+		span{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id="foods">
+	<input type="button" value="添加" id="add">
+	<ul id="list">
+		<li>苹果<span class="del"> 删除</span></li>
+		<li>香蕉<span class="del"> 删除</span></li>
+		<li>草莓<span class="del"> 删除</span></li>
+		<li>火龙果<span class="del"> 删除</span></li>
+	</ul>
+	<script>
+		var foods = document.getElementById("foods");
+		var add = document.getElementById("add");
+		var ul = document.getElementById("list");
+		var li = ul.getElementsByTagName("li")
+		add.onclick = function(){
+			var elemLi = document.createElement("li");
+			var foodsVal = foods.value;
+			var Txt = document.createTextNode(foodsVal);
+			elemLi.appendChild(Txt);
+			ul.appendChild(elemLi);
+			var elemSpan = document.createElement("span");
+			elemSpan.className = "del";
+			var delTxt = document.createTextNode(" 删除");
+			elemSpan.appendChild(delTxt);
+			elemLi.appendChild(elemSpan);
+		}
+		ul.onclick = function(event){
+			if(event.target.className == "del"){  //event.target 事件委托，委托在ul上，event.target代表的就是进行操作dom对象。
+				ul.removeChild(event.target.parentNode);
+			}
+		}
+	</script>
+</body>
+</html>

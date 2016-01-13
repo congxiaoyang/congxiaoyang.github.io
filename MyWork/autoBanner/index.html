@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bannerAutoRoll</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;
+		}
+		.pic{
+			width: 200000px;
+		}
+		.banner{
+			margin: 20px auto;
+			width: 1300px;
+			overflow: hidden;
+			position: relative;
+		}
+		.pic img{
+			width: 1300px;
+			float: left;
+		}
+		ul{
+			position: absolute;
+			bottom: 10px;
+			left: 50%;
+			margin-left: -50px;
+		}
+		ul li{
+			float: left;
+			margin-right: 10px;
+			background-color: #666;
+		}
+		ul li a{
+			display: block;
+			height: 10px;
+			width: 10px;
+			border-radius: 50%;
+		}
+		.bgc{
+			background-color: red;
+		}
+		.riginal{
+			background-color: #666;
+		}
+	</style>
+</head>
+<body>
+	<div class="banner">
+		<div class="pic">
+			<img src="images/kuose2.jpg" alt="">
+			<img src="images/kuose1.jpg" alt="">
+			<img src="images/kuose3.jpg" alt="">
+			<img src="images/kuose4.jpg" alt="">
+		</div>
+		<ul>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="jquery-1.11.1.js"></script>
+	<script>
+		var n = 0;
+		$("ul li").click(function(){
+			clearInterval(clear);  //点击按钮是需要停止roll函数的隔两秒调用
+			var ind = $(this).index();
+			console.log(ind);
+			marleft = ind * -1300;
+			$(".pic").animate({"margin-left":marleft},500);
+			$(this).addClass("bgc").siblings().removeClass("bgc");
+			n = ind;
+			clear = setInterval(roll,2000);
+		})
+
+		$("ul li").eq(0).addClass("bgc");
+		function roll(){
+			n++;
+			n = n == 4 ? 0 : n;
+			$("ul li").eq(n).addClass("bgc").siblings().removeClass("bgc");
+			marleft = -1300 * n;
+			$(".pic").animate({"margin-left":marleft},500); 
+		}
+		clear = setInterval(roll,2000);
+	</script>
+</body>
+</html>

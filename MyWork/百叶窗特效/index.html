@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百叶窗</title>
+	<style type="text/css">
+		div{
+			height: 300px;
+			margin: 100px auto;
+			width: 680px;
+			position: relative;
+			overflow: hidden;
+		}
+		div img{
+			height: 300px;
+			width: 540px;
+		}
+	</style>
+</head>
+<body>
+	<div class="pics">
+		<img src="images/animal1.jpg" alt="">
+		<img src="images/animal2.jpg" alt="">
+		<img src="images/animal3.jpg" alt="">
+		<img src="images/animal4.jpg" alt="">
+		<img src="images/animal5.jpg" alt="">
+		<img src="images/animal6.jpg" alt="">
+		<img src="images/animal7.jpg" alt="">
+		<img src="images/animal8.jpg" alt="">
+	</div>
+	<script type="text/javascript" src="jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		//八张图片排版
+		var divWidth = $("div").width();
+		var imgWidth = $("img").width();
+		var hoverWidth = (divWidth - imgWidth) / 7;
+		for(var ind = 0;ind<$("div img").length;ind++){
+			left = ind * divWidth / 8;
+			$("div img").eq(ind).css({
+			"position":"absolute",
+			"top":0,
+			"left":left
+			})
+		}
+		//鼠标滑过事件
+		$("div img").mouseenter(function(){
+			var ind = $(this).index();
+			var hoverLeft = hoverWidth * ind;     //85ind - 20ind
+			$(this).stop().animate({"left":hoverLeft},700)
+			for(var i = 0;i<$("div img").length;i++){
+				if(i>ind){   //当图片是当前滑过后面的图片
+					var leftAfter = ((i-1) * hoverWidth + imgWidth);
+					$("div img").eq(i).stop().animate({"left":leftAfter},700);
+				}else{   //当前滑过前面的图片
+					var leftBefore = i * hoverWidth;
+					$("div img").eq(i).stop().animate({"left":leftBefore},700);
+				}
+			}
+		})
+		//鼠标离开事件
+		$("div img").mouseleave(function(){  
+			for(var ind = 0;ind<$("div img").length;ind++){
+				$("div img").eq(ind).stop().animate({"left":ind * divWidth / 8},700)
+			}
+		})
+	</script>
+</body>
+</html>
